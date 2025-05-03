@@ -1,4 +1,4 @@
-# Atmosphere Registry Module
+# Registry Module
 
 A lightweight, type-safe registry system for Roblox (Luau) that allows you to register, retrieve, and manage configuration presets or any objects by a unique key. Ideal for managing atmospheres, effects, or any modular settings in your Roblox games.
 
