@@ -15,19 +15,10 @@ A lightweight, type-safe registry system for Roblox (Luau) that allows you to re
 
 1. Clone or download this repository.
 2. Place the `registry.lua` module in your `ReplicatedStorage` or any shared folder:
-
-```text
-ReplicatedStorage/
-└── common/
-    └── util/
-        └── registry.lua
-```
-
 3. Require and initialize the registry in your script:
 
 ```lua
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local registry = require(ReplicatedStorage.common.util.registry)
+local registry = require(Path.To.Registry.Module)
 local AtmosphereRegistry = registry.new("atmospheres", ...)
 ```
 
@@ -55,7 +46,7 @@ local template = {
     audioComposition = {},
     colorComposition = {},
 }
-\local configRegistry: Registry<AtmosphereConfig> = registry.new("Atmosphere", template)
+local configRegistry: Registry<AtmosphereConfig> = registry.new("Atmosphere", template)
 ```
 
 ### Registering Entries
