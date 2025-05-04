@@ -56,12 +56,12 @@ local configRegistry: Registry<AtmosphereConfig> = registry.new("Atmosphere", te
 Use `:reg(data)` to register a single entry. The `data` table must include the `customKey` field (default `name`):
 
 ```lua
-configRegistry:reg({
+configRegistry:reg {
     name = "default",
     fadeStyle = Enum.EasingStyle.Linear,
     fadeInDuration = 1,
     fadeOutDuration = 1,
-})
+}
 ```
 
 #### Bulk Registration
@@ -132,16 +132,3 @@ Any subsequent attempt to register a new entry or modify an existing one will th
 | `:freeze()`                 | Lock the registry to prevent further modifications. |
 | `:isFrozen()`               | Check if the registry is frozen.                    |
 
-## Contributing
-
-Contributions, issues, and feature requests are welcome! Please open an issue or submit a pull request.
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/NewFeature`).
-3. Commit your changes (`git commit -m 'Add NewFeature'`).
-4. Push to the branch (`git push origin feature/NewFeature`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
